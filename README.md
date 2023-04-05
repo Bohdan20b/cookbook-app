@@ -1,4 +1,4 @@
-# Cookbook application
+# 🧑‍🍳 Cookbook application
 ### 📗 ***Project description***
 ```
 It's a simple Cookbook web application. 
@@ -23,13 +23,13 @@ Based on 3-layer architecture:
 ### 🔨 ***Project launch:***
 
 1. Clone this project from GitHub. *Hint: If you use IntelliJ IDEA, use only Ultimate version*
-2. Open pom.xml and reload all maven dependencies.
-3. In terminal enter the following command: ```mvn clean package```.
-4. After success, you can CookBookApplication class in order to launch a web application.
-5. Now you can test the program in your browser using Postman API: [http://localhost:8080/recipes]([http://localhost:8080/recipes])
+2. Open [pom.xml](pom.xml) and reload all maven dependencies.
+3. Open [application.properties](src/main/resources/application.properties) and set up your username and password for DB.
+4. In terminal enter the following command: ```mvn clean package```.
+5. After success, you can CookBookApplication class in order to launch a web application.
+6. Now you can test the program in your browser using Postman API: [http://localhost:8080/recipes]([http://localhost:8080/recipes])
 
 ### 🧰 Application technologies:
 * **[JDK 17](https://www.oracle.com/cis/java/technologies/javase/jdk11-archive-downloads.html)**
 * **[Spring Boot](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web)**
-* **[Apache Maven](https://maven.apache.org/download.cgi)**
 * **[MySQL](https://www.mysql.com/)**
