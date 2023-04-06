@@ -26,7 +26,7 @@ Based on 3-layer architecture:
 2. Open [pom.xml](pom.xml) and reload all maven dependencies.
 3. Open [application.properties](src/main/resources/application.properties) and set up your username and password for DB.
 4. In terminal enter the following command: ```mvn clean package```.
-5. After success, you can CookBookApplication class in order to launch a web application.
+5. After success, you can start a CookBookApplication class in order to launch a web application.
 6. Now you can test the program in your browser using Postman API: [http://localhost:8080/recipes]([http://localhost:8080/recipes])
 
 ### 🧰 Application technologies:
