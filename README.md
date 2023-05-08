@@ -41,4 +41,4 @@ Project's HTTP methods supported:
 * **[JDK 17](https://www.oracle.com/cis/java/technologies/javase/jdk11-archive-downloads.html)**
 * **[Spring Boot](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web)**
 * **[MySQL](https://www.mysql.com/)**
-* * **[Angular CLI](https://angular.io/cli) **
+* **[Angular CLI](https://angular.io/cli)**
