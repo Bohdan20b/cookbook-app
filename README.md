@@ -21,10 +21,10 @@ Based on 3-layer architecture:
 * Data access layer - repositories.
 
 Project's HTTP methods supported: 
-1.GET /recipes - get all recipe list
-2.POST /recipes/add - add new recipe to the recipe list
-3.POST /recipes/add-child - add forked recipe from an existing one
-4.PUT /recipes/update - update an existing recipe in the list
+1. GET /recipes - get all recipe list
+2. POST /recipes/add - add new recipe to the recipe list
+3. POST /recipes/add-child - add forked recipe from an existing one
+4. PUT /recipes/update - update an existing recipe in the list
 
 
 ### 🔨 ***Project launch:***
