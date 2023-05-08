@@ -1,0 +1,14 @@
+<h2>Update a recipe: </h2>
+<div class="my-container">
+<form #myForm="ngForm" (ngSubmit)="onSubmit()">
+    <label>
+      Recipe ID:
+      <input type="number" name="id" [(ngModel)]="id" required>
+    </label>
+    <label>
+      New description:
+      <textarea name="description" [(ngModel)]="description" required></textarea>
+    </label>
+    <button type="submit" [disabled]="!myForm.valid">Update recipe</button>
+  </form>
+</div>

@@ -1,0 +1,15 @@
+<h2 class="recipe-list-title">Recipe list</h2>
+<div class="my-container">
+<div class="main" *ngFor="let recipe of recipes">
+    <ul class="recipes">
+        <li>
+            <ul>
+                <li> description: <span class="description">{{recipe.description}}</span> </li>
+                <li> date created: {{recipe.dateCreated}} </li>
+                <li> id: {{recipe.id}} </li>
+                <li>Forked recipes: {{recipe.childRecipeList}}</li>
+            </ul>
+        </li>
+      </ul>
+</div>
+</div>

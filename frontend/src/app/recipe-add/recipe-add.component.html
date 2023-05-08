@@ -1,0 +1,10 @@
+<h2>Add a new recipe: </h2>
+<div class="my-container">
+<form #myForm="ngForm" (ngSubmit)="onSubmit()">
+    <label>
+      Description:
+      <textarea name="description" [(ngModel)]="description" required></textarea>
+    </label>
+    <button type="submit" [disabled]="!myForm.valid">Add recipe</button>
+  </form>
+</div>
