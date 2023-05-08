@@ -27,7 +27,7 @@ public class RecipeServiceImpl implements RecipeService {
         childRecipe.setDescription(parentRecipe.getDescription() + SPACE + recipe.getDescription());
         childRecipe.setDateCreated(recipe.getDateCreated());
         parentRecipe.getChildRecipeList().add(childRecipe);
-        parentRecipe.setChildRecipeList(sortList(parentRecipe.getChildRecipeList()));
+        parentRecipe.setChildRecipeList(parentRecipe.getChildRecipeList());
         recipeRepository.save(childRecipe);
         return recipeRepository.save(parentRecipe);
     }
@@ -39,12 +39,8 @@ public class RecipeServiceImpl implements RecipeService {
 
     @Override
     public List<Recipe> getAll() {
-        return sortList(recipeRepository.findAll());
+        return recipeRepository.findAll();
     }
 
-    private List<Recipe> sortList(List<Recipe> recipe) {
-        return recipe.stream()
-                .sorted(Comparator.comparing(Recipe::getDescription))
-                .toList();
-    }
+
 }
