@@ -1,0 +1,14 @@
+<h2>Fork a new recipe from an existing one: </h2>
+<div class="my-container">
+<form #myForm="ngForm" (ngSubmit) ="onSubmit()">
+    <label>
+      Recipe ID:
+      <input type="number" name="id" [(ngModel)]="id" required>
+    </label>
+    <label>
+      Description:
+      <textarea name="description" [(ngModel)]="description" required></textarea>
+    </label>
+    <button type="submit" [disabled]="!myForm.valid">Fork Recipe</button>
+  </form>
+</div>
